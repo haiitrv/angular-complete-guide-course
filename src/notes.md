@@ -36,3 +36,17 @@
 - The instructions in the DOM.
 
 - \*ng -> Structural directives: Change structure of the DOM by adding or changing it.
+
+- Attribute directives: Look like a normal HTML attribute (possibly with databinding or event binding), only affect/change the element they are added to.
+
+# Services & Dependency Injection
+
+- Services allow us to manage data, handle logic in a central place.
+
+# Observables
+
+- Can be known as a data source.
+- Is an object we import from a third party package such as RxJS.
+  -> Are constructs to which you subscribe to be informed about changes in data.
+
+- Observer (subscribe,...) gets executed to handle data, error, completion.
