@@ -25,6 +25,8 @@ import { LoadingSpinnerComponent } from './shared/loading-spinner/loading-spinne
 import { AuthInterceptorService } from './auth/auth/auth-interceptor.service';
 import { StoreModule } from '@ngrx/store';
 import { shoppingListReducer } from './shopping-list/store/shopping-list.reducer';
+import { AnimationsComponent } from './animations/animations.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -45,6 +47,7 @@ import { shoppingListReducer } from './shopping-list/store/shopping-list.reducer
     RecipeEditComponent,
     AuthComponent,
     LoadingSpinnerComponent,
+    AnimationsComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,6 +56,8 @@ import { shoppingListReducer } from './shopping-list/store/shopping-list.reducer
     ReactiveFormsModule,
     HttpClientModule,
     StoreModule.forRoot({ shoppingList: shoppingListReducer }),
+    StoreModule.forRoot({}, {}),
+    BrowserAnimationsModule,
   ],
   providers: [
     ShoppingListService,
