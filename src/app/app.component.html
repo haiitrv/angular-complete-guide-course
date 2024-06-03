@@ -8,4 +8,31 @@
   </div>
 </div> -->
 
-<app-animations></app-animations>
+<!-- <app-animations></app-animations> -->
+<app-header-new />
+
+<main>
+  <!-- <ul id="users" *ngFor="let user of users">
+    <li>
+      <app-user [avatar]="user.avatar" [name]="user.name"></app-user>
+    </li>
+  </ul> -->
+  <ul id="users">
+    @for (user of users; track user.id) {
+    <li>
+      <app-user [user]="user" [selected]="user.id === userSelectedID" (select)="onReceiveID($event)"></app-user>
+    </li>
+
+    }
+
+  </ul>
+
+  @if (userSelectedID) {
+  <div>
+    <app-tasks [selectedID]="userSelectedID" [selectedUser]="userSelected"></app-tasks>
+  </div>
+  } @else {
+  <div>Please select a user!</div>
+  }
+
+</main>

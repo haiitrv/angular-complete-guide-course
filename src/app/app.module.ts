@@ -27,6 +27,10 @@ import { StoreModule } from '@ngrx/store';
 import { shoppingListReducer } from './shopping-list/store/shopping-list.reducer';
 import { AnimationsComponent } from './animations/animations.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderNewComponent } from './new-sections/header-new/header-new.component';
+import { UserComponent } from './new-sections/user/user.component';
+import { TasksComponent } from './new-sections/tasks/tasks.component';
+import { TaskComponent } from './new-sections/tasks/task/task.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +52,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AuthComponent,
     LoadingSpinnerComponent,
     AnimationsComponent,
+    HeaderNewComponent,
+    UserComponent,
+    TasksComponent,
+    TaskComponent,
   ],
   imports: [
     BrowserModule,
