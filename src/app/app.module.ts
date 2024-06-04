@@ -31,6 +31,7 @@ import { HeaderNewComponent } from './new-sections/header-new/header-new.compone
 import { UserComponent } from './new-sections/user/user.component';
 import { TasksComponent } from './new-sections/tasks/tasks.component';
 import { TaskComponent } from './new-sections/tasks/task/task.component';
+import { NewTaskComponent } from './new-sections/tasks/new-task/new-task.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { TaskComponent } from './new-sections/tasks/task/task.component';
     UserComponent,
     TasksComponent,
     TaskComponent,
+    NewTaskComponent,
   ],
   imports: [
     BrowserModule,

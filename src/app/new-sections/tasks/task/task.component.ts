@@ -1,4 +1,5 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
+import { TasksService } from '../tasks.service';
 
 export type TTask = {
   id: string;
@@ -15,9 +16,11 @@ export type TTask = {
 })
 export class TaskComponent {
   @Input({ required: true }) task: TTask;
-  @Output() complete = new EventEmitter<string>();
+  // @Output() complete = new EventEmitter<string>();
+
+  private tasksService = inject(TasksService);
 
   onCompleteTask() {
-    this.complete.emit(this.task.id);
+    this.tasksService.removeTask(this.task.id);
   }
 }
