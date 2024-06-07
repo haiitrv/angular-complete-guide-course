@@ -32,6 +32,9 @@ import { UserComponent } from './new-sections/user/user.component';
 import { TasksComponent } from './new-sections/tasks/tasks.component';
 import { TaskComponent } from './new-sections/tasks/task/task.component';
 import { NewTaskComponent } from './new-sections/tasks/new-task/new-task.component';
+import { HeadersComponent } from './investment-sections/headers/headers.component';
+import { UserInputComponent } from './investment-sections/user-input/user-input.component';
+import { InvestmentResultsComponent } from './investment-sections/investment-results/investment-results.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +61,9 @@ import { NewTaskComponent } from './new-sections/tasks/new-task/new-task.compone
     TasksComponent,
     TaskComponent,
     NewTaskComponent,
+    HeadersComponent,
+    UserInputComponent,
+    InvestmentResultsComponent,
   ],
   imports: [
     BrowserModule,
